@@ -1,0 +1,152 @@
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+
+}
+.coverClip video{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+}
+
+#tittle{
+    color: black;    
+    background-color: #ff4c68;
+}
+.nav-link, a{
+    color: black;
+}
+
+h1{
+    font-size: 3rem;
+    line-height: 1.5;
+    font-weight: bold;
+}
+.container-fluid{
+    padding: 3% 10%;
+}
+.navbar-brand{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.nav-item{
+    padding: 0 18px;
+}
+#Skills{
+    padding: 7% 7%;
+}
+
+
+h3{
+    font-weight: bold;
+    /* padding: 2%; */
+}
+.skill-box{
+    margin: 2% 3%;
+    padding: 2%;
+    /* border: 1px solid black; */
+}
+.skill-box:hover{
+    margin: 5% 3%;
+    padding: 2%;
+    /* border: 1px solid black; */
+    color: white;
+    background-color: black;
+    border-radius: 7%;
+    transition: 1s;
+    cursor: pointer;
+}
+ul li{
+    color: black;
+}
+
+.carousel-inner{
+background-color: #948f90b5;
+padding: 5%;
+width:100%;
+}
+.project-list{
+   padding:  7%;
+   width: 100%;
+
+}
+.project-btn{
+    z-index: -1;
+    margin-left: 5%;
+}
+.carousel-btn{
+    padding-right: 2%;
+    
+}
+.image-margin{
+    width: 50%;
+    text-align: center;
+}
+@media (min-width:700 ) {
+    .section1-margin{
+        margin: 85%!important;
+    }
+    .image-margin{
+        width: 85%;
+    }
+}
+
+
+.img-cover{
+    border-radius: 50%;
+}
+.footer-img{
+    width: 2rem;
+    height: 2rem;
+}
+.resume-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (max-width: 500px) {
+    .resume-container{
+        display: none;
+    }
+  }
+  .coverClip{
+    display: none;
+  }
+  @media only screen and (min-width: 1111px ) {
+    .coverClip{
+        display: block;
+    }
+    #tittle{
+        background-color: transparent;
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+}
+
+  .showmore{
+    display: none;
+    transition:5s;
+  }
+  
+  .show-more{
+    text-align: center;
+    background-color: #948f90b5;
+    padding-bottom: 3%;
+  }
+
+  .card:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: 1s;
+    padding: 5%;
+  }
+  .btn-small:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+  }
