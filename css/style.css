@@ -59,9 +59,6 @@ h3{
     transition: 1s;
     cursor: pointer;
 }
-ul li{
-    color: black;
-}
 
 .carousel-inner{
 background-color: #948f90b5;
