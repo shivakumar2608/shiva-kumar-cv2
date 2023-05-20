@@ -61,7 +61,7 @@ h3{
 }
 
 .carousel-inner{
-background-color: #948f90b5;
+background-color: #ff4c68;
 padding: 5%;
 width:100%;
 }
@@ -104,6 +104,11 @@ width:100%;
     justify-content: center;
     align-items: center;
 }
+ .show-more{
+    text-align: center;
+    background-color: #ff4c68;
+    padding-bottom: 3%;
+  }
 @media only screen and (max-width: 500px) {
     .resume-container{
         display: none;
@@ -122,6 +127,17 @@ width:100%;
         top: 0;
         z-index: 1;
     }
+      .show-more{
+        text-align: center;
+        background-color: #948f90b5;
+        padding-bottom: 3%;
+      }
+      
+    .carousel-inner{
+        background-color: #948f90b5;
+        padding: 5%;
+        width:100%;
+        }
 }
 
   .showmore{
@@ -129,11 +145,7 @@ width:100%;
     transition:5s;
   }
   
-  .show-more{
-    text-align: center;
-    background-color: #948f90b5;
-    padding-bottom: 3%;
-  }
+ 
 
   .card:hover{
     background-color: black;
