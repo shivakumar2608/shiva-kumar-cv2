@@ -11,6 +11,9 @@
     integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   <!-- link of css files -->
   <link rel="stylesheet" href="css/style.css">
+  <!-- typedjs -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.css" />
+
   <!-- link of google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,6 +31,11 @@
 <!--       <source src="backgroundClip.mp4" type="video/mp4"> -->
     </video>
 </div>
+
+<div id="download-cv-link" class="download">
+  <a href="https://api.whatsapp.com/send?phone=+917093001221&text=Hello Shiva, I got your contact details from website."> <img class="whatsapp-width" src="/symbols/whatsapp.png" alt=""> </a>
+</div>
+
   <div id="tittle">
     <div class="container-fluid">
       <nav class="navbar m-2 navbar-light navbar-expand-lg ">
@@ -61,17 +69,33 @@
       </nav>
       <div class="section1">
         <div class="row">
-          <div class=" w-50 col-lg-6 col-md-12 col-sm-12 m-auto section1" data-aos="fade-right">
+
+          <div class=" width-50 col-lg-6 col-md-12 col-sm-12 m-auto section1" data-aos="fade-right">
+            <div class="main-title">
             <h1>Shiva Kumar  </h1>
-            <h1>  Web Developer🚀 </h1>
+            <h1 id="main-heading-title"></h1>
             <p>I am a positive, enthusiastic and competent Web Developer who, over the years, has built up a diverse range of skills, qualities and attributes that guarantee I will perform highly in this role.</p>
-            
-            <a href="#Skills" class="m-2 btn btn-lg btn-light btn-small">Know More</a>
-            <a href="resume/shiva-kumar-cv1.png" class="m-2 btn btn-lg btn-light btn-small " download="shiva-kumar-cv">Download CV</a>
           </div>
-          <div class="col-lg-6 col-md 12  col-sm-12 image-margin" data-aos="fade-left">
+            <div class="buttons">
+              <ul class="nav col-md-12 list-unstyled d-flex">
+                <li class="ms-3"><a class="text-muted" href="https://www.instagram.com/_chanti26_/" target="_blank"> <img  class="footer-img" src="symbols/instagram.png" alt="" srcset=""> </a></li>
+                <li class="ms-3"><a class="text-muted" href="https://www.facebook.com/chanti3929"><img  class="footer-img" src="symbols/facebook.png" alt="" srcset=""> </a></li>
+                <li class="ms-3"><a class="text-muted" href="https://github.com/shivakumar2608"><img style="border-radius: 45%;"  class="footer-img" src="symbols/github.png" alt="" srcset=""> </a></li>
+                <li class="ms-3"><a class="text-muted" href="#"> <img  class="footer-img" src="symbols/twitter.png" alt="" srcset=""> </a></li>
+              </ul>
+            </div>
+            <div class="d-grid gap-2 d-md-block">
+              <a href="#Skills" class="col col-lg-6 col-sm-12 m-2 btn btn-md btn-light btn-small">Know More</a>
+              <a href="resume/shiva-kumar-cv1.png" class="col col-lg-6 col-sm-12 m-2 btn btn-md btn-light btn-small " download="shiva-kumar-cv">Download CV</a>
+
+            </div>
+          </div>
+
+          <div id="image-column" class="col-lg-6 col-md-12  col-sm-12 image-margin" data-aos="fade-left">
             <img class="img-cover w-50 m-auto" src="resume/profileCover.png" alt="Profile-image" srcset="">
+            <!-- <img class="img-cover w-50 m-auto" src="/profilegif.gif" alt="Profile-image" srcset=""> -->
           </div>
+                    
         </div>
       </div>
 
@@ -261,7 +285,7 @@
     </button>
   </div>
   <div class="show-more">
-   <a href= "#projects-listid"> <button onclick='showmore()' class=" btn btn-lg btn-outline btn-showmore">VIEW ALL PORJECTS</button> </a>
+   <a href= "#projects-listid"> <button onclick='showmore()' class=" btn btn-lg btn-sm-6 btn-outline btn-showmore btn-danger">VIEW ALL PORJECTS</button> </a>
 </div>
     
   <!-- ViewMore projects -->
@@ -502,7 +526,7 @@
 
 <!-- contact form section -->
 
-<section data-aos="fade-up" class="w-100 p-4 d-flex  pb-4">
+<section data-aos="fade-up" class="w-100 p-4 my-4 d-flex  pb-4">
   <form id="contact-form" action="mailto:shivakumarchanti12@gmail.com" method="post" class="text-center" style="width: 100%; margin: auto; max-width: 300px">  
       <h2>Contact me:</h2>
     <!-- Name input -->
@@ -571,9 +595,22 @@
         once: true,
       });
       
-         
     </script>
-  
+<!-- cdn of typedjs -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+<script>
+  const typed = new Typed('#main-heading-title', {
+    strings: ['Web Developer🚀', 'Java Developer🚀','UI UX Designer🚀'],
+    typeSpeed: 80,
+    backSpeed: 80,
+    startDelay: 20,
+    loop: true,
+    showCursor: true,
+    cursorChar: '',
+
+  });
+</script>
 </body>
 
 </html>
