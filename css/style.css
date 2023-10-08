@@ -204,3 +204,12 @@ width:100%;
     color: white;
     border: 1px solid black;
   }
+
+.certificatesDisplay{
+    padding-top:2.5% ;
+    background-color:cornsilk;
+  }
+  .certificatesDisplay:hover{
+    background-color:rgb(218, 210, 210);
+    cursor: pointer;
+  }
